@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pid:</strong>
+  <%= @product.pid %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @product.picture %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @product.image.url(:medium), class: "img-thumbnail" %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
